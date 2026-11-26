@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_MHjggOeJEfGbwqIgoUurVg" name="plateform operator">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ML3YwOeJEfGbwqIgoUurVg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Bq64MOf6EfGVJa-hSm4d3w" name="Actor2"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dfWzAOf7EfGVJa-hSm4d3w" name="Platform Operator Subsystem" useCase="_VGOvcOf8EfGVJa-hSm4d3w _aoL8IOf8EfGVJa-hSm4d3w _dM0cEOf8EfGVJa-hSm4d3w _gVePEOf8EfGVJa-hSm4d3w _nYatYOf8EfGVJa-hSm4d3w _q7XPsOf8EfGVJa-hSm4d3w">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_VGOvcOf8EfGVJa-hSm4d3w" name="Authenticate operator" subject="_dfWzAOf7EfGVJa-hSm4d3w"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_aoL8IOf8EfGVJa-hSm4d3w" name="Manage roles" subject="_dfWzAOf7EfGVJa-hSm4d3w">
+      <include xmi:type="uml:Include" xmi:id="_K1n68Of_EfGVJa-hSm4d3w" addition="_VGOvcOf8EfGVJa-hSm4d3w"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_dM0cEOf8EfGVJa-hSm4d3w" name="Assign Permissions" subject="_dfWzAOf7EfGVJa-hSm4d3w">
+      <include xmi:type="uml:Include" xmi:id="_AZyRYOgDEfGVJa-hSm4d3w" addition="_VGOvcOf8EfGVJa-hSm4d3w"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_gVePEOf8EfGVJa-hSm4d3w" name="Modify permission" subject="_dfWzAOf7EfGVJa-hSm4d3w">
+      <include xmi:type="uml:Include" xmi:id="_SxCSUOf_EfGVJa-hSm4d3w" addition="_VGOvcOf8EfGVJa-hSm4d3w"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_nYatYOf8EfGVJa-hSm4d3w" name="Access procted Function " subject="_dfWzAOf7EfGVJa-hSm4d3w">
+      <include xmi:type="uml:Include" xmi:id="_p6VloOf-EfGVJa-hSm4d3w" addition="_q7XPsOf8EfGVJa-hSm4d3w"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_q7XPsOf8EfGVJa-hSm4d3w" name="check permission " subject="_dfWzAOf7EfGVJa-hSm4d3w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_B3plQOf9EfGVJa-hSm4d3w" name="Platform Operator "/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s1sY8Of9EfGVJa-hSm4d3w" memberEnd="_s1uOIOf9EfGVJa-hSm4d3w _s1uOIef9EfGVJa-hSm4d3w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s1tAAOf9EfGVJa-hSm4d3w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s1tAAef9EfGVJa-hSm4d3w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s1uOIOf9EfGVJa-hSm4d3w" name="authenticate operator" type="_VGOvcOf8EfGVJa-hSm4d3w" association="_s1sY8Of9EfGVJa-hSm4d3w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s1uOIef9EfGVJa-hSm4d3w" name="platform operator " type="_B3plQOf9EfGVJa-hSm4d3w" association="_s1sY8Of9EfGVJa-hSm4d3w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u7CU0Of9EfGVJa-hSm4d3w" memberEnd="_u7C74uf9EfGVJa-hSm4d3w _u7Di8Of9EfGVJa-hSm4d3w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u7C74Of9EfGVJa-hSm4d3w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u7C74ef9EfGVJa-hSm4d3w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u7C74uf9EfGVJa-hSm4d3w" name="manage roles" type="_aoL8IOf8EfGVJa-hSm4d3w" association="_u7CU0Of9EfGVJa-hSm4d3w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u7Di8Of9EfGVJa-hSm4d3w" name="platform operator " type="_B3plQOf9EfGVJa-hSm4d3w" association="_u7CU0Of9EfGVJa-hSm4d3w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_v_UcUOf9EfGVJa-hSm4d3w" memberEnd="_v_Vqcuf9EfGVJa-hSm4d3w _v_Vqc-f9EfGVJa-hSm4d3w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v_VqcOf9EfGVJa-hSm4d3w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_v_Vqcef9EfGVJa-hSm4d3w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_v_Vqcuf9EfGVJa-hSm4d3w" name="assign permissions" type="_dM0cEOf8EfGVJa-hSm4d3w" association="_v_UcUOf9EfGVJa-hSm4d3w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_v_Vqc-f9EfGVJa-hSm4d3w" name="platform operator " type="_B3plQOf9EfGVJa-hSm4d3w" association="_v_UcUOf9EfGVJa-hSm4d3w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AfbYoOf-EfGVJa-hSm4d3w" memberEnd="_Afcmwuf-EfGVJa-hSm4d3w _AfdN0Of-EfGVJa-hSm4d3w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AfcmwOf-EfGVJa-hSm4d3w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Afcmwef-EfGVJa-hSm4d3w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Afcmwuf-EfGVJa-hSm4d3w" name="access procted function " type="_nYatYOf8EfGVJa-hSm4d3w" association="_AfbYoOf-EfGVJa-hSm4d3w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AfdN0Of-EfGVJa-hSm4d3w" name="platform operator " type="_B3plQOf9EfGVJa-hSm4d3w" association="_AfbYoOf-EfGVJa-hSm4d3w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_B9X9UOf-EfGVJa-hSm4d3w" memberEnd="_B9YkYuf-EfGVJa-hSm4d3w _B9ZLcOf-EfGVJa-hSm4d3w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B9YkYOf-EfGVJa-hSm4d3w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B9YkYef-EfGVJa-hSm4d3w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_B9YkYuf-EfGVJa-hSm4d3w" name="modify permission" type="_gVePEOf8EfGVJa-hSm4d3w" association="_B9X9UOf-EfGVJa-hSm4d3w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_B9ZLcOf-EfGVJa-hSm4d3w" name="platform operator " type="_B3plQOf9EfGVJa-hSm4d3w" association="_B9X9UOf-EfGVJa-hSm4d3w"/>
+  </packagedElement>
+</uml:Model>
